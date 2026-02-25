@@ -19,3 +19,28 @@ This project implements a multi-threaded TCP server in C using POSIX sockets and
 - If empty, it responds with "Buffer empty".
 
 ## Compile
+
+
+gcc bufferServer.c -o server -pthread
+gcc client.c -o client
+
+
+## Run
+
+Server:
+
+./server 5555
+
+
+Client:
+
+./client localhost 5555
+
+
+## Concepts Covered
+
+- TCP/IP Networking
+- Socket Programming
+- Multi-threading
+- Mutex Locks
+- Circular Buffer Design
